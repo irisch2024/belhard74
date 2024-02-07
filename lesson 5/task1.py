@@ -2,8 +2,13 @@
 N = 5
 M = 3
 K = -5
-a = [0, N+1]
-N += 1
-for i in a:
-    if i % M == 0 or i > K:
+
+for i in range(K, 1000):
+    if i % M == 0 and i > K:
         print(i)
+
+
+
+
+
+

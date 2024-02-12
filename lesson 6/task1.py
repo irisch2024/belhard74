@@ -1,10 +1,9 @@
 # Дан список рандомных чисел, необходимо отсортировать его в виде, сначала четные, потом нечётные
 a=[2, 5, 22, -4, 0, 46, -13, 77, -32]
 i = 0
-for i in a:
+for i in sorted(a):
     if i % 2 == 0:
         print(i,end=" ")
-
-for i in a:
+for i in sorted(a):
     if i % 2 != 0:
-        print(i, end=" ")
+        print(i,end=" ")

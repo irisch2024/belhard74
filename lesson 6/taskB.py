@@ -5,5 +5,7 @@ a = {"S":"...", "O":"---"}
 def morze(i):
     if i in a.keys():
         return a.get(i)
-print(morze("S"))
+
+word = map(morze, list(input("Text: ")))
+print(''.join(list(word)))
 

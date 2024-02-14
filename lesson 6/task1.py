@@ -4,6 +4,8 @@ i = 0
 for i in sorted(a):
     if i % 2 == 0:
         print(i,end=" ")
-for i in sorted(a):
-    if i % 2 != 0:
-        print(i,end=" ")
+
+k = 0
+for k in sorted(a):
+    if k % 2 != 0:
+        print(k, end=" ")

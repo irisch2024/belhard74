@@ -1,16 +1,16 @@
 #Написать класс Car
 
 class Car:
-    cls_color = "Green"   #цвет
-    obj_color: str
 
-    cls_count_passenger_seats = 3 #количество пассажирских мест
-    obj_count_passenger_seats = int
+    def __init__(self, color, count_passenger_seats, s_baby_seat):
+        self.color = color
+        self.count_passenger_seats = count_passenger_seats
+        self.s_baby_seat = s_baby_seat
+        self.is_busy = False
 
-    cls_is_baby_seat = "в наличии" #наличие десткого кресла
-    obj_is_baby_seat = bool
+Car1 = Car(color="Green", count_passenger_seats=4, s_baby_seat = True)
+Car2 = Car(color="Red", count_passenger_seats=4, s_baby_seat = False)
 
 
-
-
+print(Car2.s_baby_seat)
 

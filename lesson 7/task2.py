@@ -8,3 +8,5 @@ class Car:
 
 
 class Taxi:
+    def __init__(self, cars: list[Car]):
+        self.cars = cars

@@ -1,7 +1,7 @@
 from psycopg2 import connect
 
 with connect(dsn="postgres://user9:bIw9lBQkw@217.76.60.77:6666/user9") as conn:
-    with conn.cursor() as cur:  #type: cursor
+    with conn.cursor() as cur:  # type: 'cursor'
         cur.execute("""
            CREATE TABLE IF NOT EXISTS tags(
               id SERIAL PRIMARY KEY,
@@ -29,5 +29,3 @@ with connect(dsn="postgres://user9:bIw9lBQkw@217.76.60.77:6666/user9") as conn:
            );        
         """)
         conn.commit()
-
-
